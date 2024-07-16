@@ -15,6 +15,10 @@ io.on("connection", (socket) => {
     console.log(data);
     io.emit("receiveLocation", { id: data.id, ...data });
   });
+  // Get handshaking data
+  socket.on("handshake", (data) => {
+    console.log(data);
+  });
   console.log("a user connected");
 });
 

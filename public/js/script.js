@@ -40,3 +40,8 @@ socket.on("receiveLocation", (data) => {
     marker[id].setLatLng([latitude, longitude]);
   }
 });
+
+socket.on("handshake", (data) => {
+  console.log(data);
+});
+console.log(marker);

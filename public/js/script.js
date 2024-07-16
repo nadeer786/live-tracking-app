@@ -44,4 +44,3 @@ socket.on("receiveLocation", (data) => {
 socket.on("handshake", (data) => {
   console.log(data);
 });
-console.log(marker);
